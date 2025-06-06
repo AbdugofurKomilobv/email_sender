@@ -33,17 +33,17 @@
 #     body = "Bu test xabari Python dasturi orqali yuborildi."
 
 #     send_email(sender_email, sender_password, receiver_email, subject, body)
-from twilio.rest import Client
+# from twilio.rest import Client
 
-# Twilio hisobingiz ma'lumotlari
-account_sid = 'SIZNING_ACCOUNT_SID'
-auth_token = 'SIZNING_AUTH_TOKEN'
-client = Client(account_sid, auth_token)
+# # Twilio hisobingiz ma'lumotlari
+# account_sid = 'SIZNING_ACCOUNT_SID'
+# auth_token = 'SIZNING_AUTH_TOKEN'
+# client = Client(account_sid, auth_token)
 
-message = client.messages.create(
-    body="Salom! Bu Twilio orqali yuborilgan test SMS.",
-    from_='+1234567890',  # Twilio telefon raqamingiz
-    to='+998901234567'     # SMS yubormoqchi bo‘lgan telefon raqami
-)
+# message = client.messages.create(
+#     body="Salom! Bu Twilio orqali yuborilgan test SMS.",
+#     from_='+1234567890',  # Twilio telefon raqamingiz
+#     to='+998901234567'     # SMS yubormoqchi bo‘lgan telefon raqami
+# )
 
-print(f"SMS yuborildi, SID: {message.sid}")
+# print(f"SMS yuborildi, SID: {message.sid}")
